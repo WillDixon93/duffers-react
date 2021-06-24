@@ -77,7 +77,7 @@ const FBAuth = (req, res, next) => {
 
    const newFore = {
        body:req.body.body, 
-       userHandle: req.user.userHandle, 
+       userHandle: req.body.userHandle, 
        createdAt: new Date().toISOString()
    };
 
